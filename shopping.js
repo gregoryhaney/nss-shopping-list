@@ -50,3 +50,14 @@ const highPriorityItemsArray = [
 ]
 
 console.log(highPriorityItemsArray)
+
+// add a FOR...OF loop with an IF condition to iterate through
+// all objects in the array and log to the console only those with
+// a cost greater than $8 (variable for this hardcoded)
+
+const highPrice = 8.00
+for (const highPriorityItem of highPriorityItemsArray) {
+        if (highPriorityItem.price > highPrice) {
+            console.log(`The ${highPriorityItem.name} is rather expensive. It costs $${highPriorityItem.price}.`)
+        }
+}
